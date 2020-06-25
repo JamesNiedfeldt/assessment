@@ -1,0 +1,14 @@
+<div *ngIf="issue" class="issue-detail">
+    <h1 class="title">{{issue.title}}</h1>
+    <p class="body">{{issue.body}}</p>
+    <div class="footer">
+        <p>Opened by: {{issue.userName}}</p>
+        <p>Assigned to: 
+            <span *ngFor="let a of issue.assignees; last as isLast">
+                {{a}}<span *ngIf="isLast == false">,</span>
+            </span>
+        </p>
+        <p>Created at: {{issue.created}}</p>
+        <p>Last updated: {{issue.updated}}</p>
+    </div>
+</div>

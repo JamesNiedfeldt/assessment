@@ -1,0 +1,43 @@
+.container {
+    width: 80em;
+    margin: auto;
+}
+
+.issues-list {
+    width: 25em;
+    height: 100%;
+    overflow-y: scroll;
+    position: fixed;
+    margin: 0;
+}
+.issues-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+.issues-table tr:nth-child(even) {
+    background-color: #fefeff;
+}
+.issues-table tr:nth-child(odd) {
+    background-color: #e7f2ff;
+}
+.issue-item {
+    padding: 1em 1em .5em 1em;
+}
+.issue-item:hover {
+    background-color: #7ab6ff
+}
+.issue-item.selected {
+    background-color: #9ac8ff
+}
+.issue-item.selected:hover {
+    background-color: #7ab6ff
+}
+.issue-item p {
+    color: #505050
+}
+
+.issue-display {
+    width: 55em;
+    overflow: auto;
+    float: right;
+}

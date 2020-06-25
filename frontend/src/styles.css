@@ -1,0 +1,7 @@
+/* Application-wide styles */
+h1 {
+    font-weight: lighter;
+}
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}

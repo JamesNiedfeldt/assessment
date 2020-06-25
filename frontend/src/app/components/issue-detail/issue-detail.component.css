@@ -1,0 +1,22 @@
+.issue-detail {
+    padding: 0;
+    border-top-right-radius: 30px;
+    border: 1px solid gray;
+}
+
+.title {
+    background-color: lightgray;
+    border-top-right-radius: 30px;
+    padding: .5em;
+    margin: 0;
+}
+.body {
+    padding: 1em;
+    margin: 0;
+    white-space: pre-line;
+}
+.footer {
+    color: #505050;
+    padding: 0 1em 0 1em;
+    margin: 0;
+}

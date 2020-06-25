@@ -1,0 +1,18 @@
+<div class="container">
+
+    <div class="issue-display">
+        <app-issue-detail [issue]="selectedIssue"></app-issue-detail>
+    </div>
+
+    <div class="issues-list">
+        <table class="issues-table">
+            <tr *ngFor="let i of issues" (click)=onSelect(i)>
+                <td class="issue-item" [class.selected]="i === selectedIssue">
+                    <b>{{i.title}}</b>
+                    <p>Opened by {{i.userName}}</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>
