@@ -1,3 +1,9 @@
+/**
+ * Represents the list of issues populated by IssuesService
+ * 
+ * @author James Niedfeldt
+ */
+
 import { Component, OnInit } from '@angular/core';
 
 import { Issue } from '../../interfaces/issue';

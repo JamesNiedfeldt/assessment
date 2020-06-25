@@ -27,14 +27,6 @@ export class IssuesService {
 
     return of(this.makeRequest(issues, req, params))
       .pipe(catchError(this.handleError<Issue[]>('makeRequest', [])));
-
-
-    // return of([
-    //   {title: "title1", userName: "user1", body: "body1", assignees: ["assignee1"], created: "", updated: ""},
-    //   {title: "title2", userName: "user2", body: "body2", assignees: ["assignee2", "asignee2a"], created: "", updated: ""},
-    //   {title: "title3", userName: "user3", body: "body3", assignees: ["assignee3"], created: "", updated: ""},
-    //   {title: "title4", userName: "user4", body: "body4", assignees: ["assignee4"], created: "", updated: ""}
-    // ])
   }
 
   private makeRequest(issues: Issue[], url: string, params: HttpParams): Issue[] {
@@ -54,6 +46,7 @@ export class IssuesService {
             assignees.push('None');
           }
   
+          //Add to list of issues
           issues.push({
             title: data[i]['title'],
             userName: data[i]['user']['login'],
@@ -65,6 +58,7 @@ export class IssuesService {
         }
       }
 
+      //Check if there are additional pages
       for (let l of response.headers.get('link').split(',')) {
         if (l.includes('rel="next"')) {
           let nextPage = l.substring(l.lastIndexOf('<') + 1, l.lastIndexOf('>'));

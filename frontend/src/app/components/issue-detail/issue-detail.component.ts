@@ -1,3 +1,9 @@
+/**
+ * Represents an issue displayed with detailed information.
+ * 
+ * @author James Niedfeldt
+ */
+
 import { Component, OnInit, Input } from '@angular/core';
 import { Issue } from '../../interfaces/issue'
 
