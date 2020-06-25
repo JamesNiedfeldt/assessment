@@ -1,3 +1,10 @@
+/**
+ * A class for the Spring framework to create a useful HTTP response when
+ * a NoteNotFoundException is thrown.
+ * 
+ * @author James Niedfeldt
+ */
+
 package assessment.backend;
 
 import org.springframework.http.HttpStatus;

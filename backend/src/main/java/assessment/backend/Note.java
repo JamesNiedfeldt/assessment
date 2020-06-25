@@ -1,3 +1,9 @@
+/**
+ * A JPA entity representing a note object
+ * 
+ * @author James Niedfeldt
+ */
+
 package assessment.backend;
 
 import javax.persistence.Entity;

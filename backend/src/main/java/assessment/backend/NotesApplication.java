@@ -1,3 +1,10 @@
+/**
+ * This program implements the Spring framework to do basic CRUD commands
+ * over a REST API on Note objects.
+ * 
+ * @author James Niedfeldt
+ */
+
 package assessment.backend;
 
 import org.springframework.boot.SpringApplication;
