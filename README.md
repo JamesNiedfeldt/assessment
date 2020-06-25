@@ -1,5 +1,6 @@
-# Coding Assessment
+## Coding Assessment
 This repository contains two separate projects: the backend and frontend coding assessments. This readme details how to build and run each of them separately.
+
 ---
 ## Backend
 The backend uses the [Spring framework](https://spring.io) to implement a RESTful API for taking and keeping notes.
@@ -49,6 +50,7 @@ The server can take the following requests:
 * Body params: none
 * Query params: none
 * Example: `curl -i -H "Content-Type: application/json" -X DELETE http://localhost:8080/api/notes/1`
+
 ---
 ## Frontend
 The front end uses AngularJS to get all non-pull-request issues logged in the [Angular GitHub repo](https://github.com/angular/angular) within the last seven days and display them in an HTML page. By clicking an issue in the list a more detailed version of the issue will be displayed.
